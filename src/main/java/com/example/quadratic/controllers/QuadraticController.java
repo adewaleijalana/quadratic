@@ -35,7 +35,7 @@ public class QuadraticController {
     public QuadraticResponse quadraticMethod(@RequestBody QuadraticRequest request){
         log.info("request: \n{}", gson.toJson(request));
         Double [] results = quadraticService
-                .computeQuadratic(request.getADouble(), request.getBDouble(), request.getCDouble());
+                .computeQuadratic(request.getaDouble(), request.getbDouble(), request.getcDouble());
 
         return QuadraticResponse.builder()
                 .roots(results)

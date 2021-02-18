@@ -1,15 +1,8 @@
 package com.example.quadratic.requests;
 
-import lombok.AllArgsConstructor;
-import lombok.Builder;
-import lombok.Data;
-import lombok.NoArgsConstructor;
 
 import java.io.Serializable;
 
-@Data
-@Builder
-@AllArgsConstructor
 public class QuadraticRequest implements Serializable {
 
     public QuadraticRequest(){
@@ -19,6 +12,30 @@ public class QuadraticRequest implements Serializable {
     private double aDouble;
     private double bDouble;
     private double cDouble;
+
+    public double getaDouble() {
+        return aDouble;
+    }
+
+    public void setaDouble(double aDouble) {
+        this.aDouble = aDouble;
+    }
+
+    public double getbDouble() {
+        return bDouble;
+    }
+
+    public void setbDouble(double bDouble) {
+        this.bDouble = bDouble;
+    }
+
+    public double getcDouble() {
+        return cDouble;
+    }
+
+    public void setcDouble(double cDouble) {
+        this.cDouble = cDouble;
+    }
 
     @Override
     public String toString() {
